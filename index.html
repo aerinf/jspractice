@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        I didn't follow the code exactly because there's a lot 
+        to simply type out, but I attempted to show that I went
+        through every page and tried out every tag/expression.
+    -->
+    <head>
+        <title></title>
+        <style></style>
+        <script>
+            function greet()
+            {
+                console.log("Hello World.");
+            }
+            function shoutTen() 
+            {
+                console.log("10!");
+            }
+            function countDown(n) 
+            {
+                if(n > 0) 
+                {
+                    console.log(n);
+                    countDown(n-1);
+                }
+                
+            }
+        </script>
+    </head>
+    <body onload="greet();">
+       <p>
+            Hello World
+        </p>
+       <p>
+            Goodbye World
+        </p>
+       <div>
+            This is in a &lt;div&gt; <br/>
+            The character &#161; has the value #161.
+       </div>
+       <div>
+            This is also in a div.
+       </div>
+       <span>
+            This is in a span.
+       </span>
+       <span>
+            This is also in a span. What's different?
+       </span>
+       <h1>H1</h1>
+       <h2>H2</h2>
+       <button onclick="shoutTen();">Shout 10</button>
+       <button onclick="countDown(10);">Count Down</button>
+    </body>
+
+</html>
