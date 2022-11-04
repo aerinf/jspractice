@@ -23,12 +23,31 @@
                 {
                     console.log(n);
                     countDown(n-1);
-                }
-                
+                } 
+            }
+            function initialize() {
+                num1 = 3; 
+                num2 = 7;
+            }
+            function addNumbers() {
+                var result = num1 + num2;
+                conosle.log(result);
+            }
+            function subtractNumbers() {
+                var result = num1 - num2;
+                console.log(result);
+            }
+            function multiplyNumbers() {
+                var result = num1 * num2;
+                console.log(result);
+            }
+            function divideNumbers() {
+                var result = num1 / num2;
+                console.log(result);
             }
         </script>
     </head>
-    <body onload="greet();">
+    <body onload="initialize();">
        <p>
             Hello World
         </p>
@@ -52,6 +71,10 @@
        <h2>H2</h2>
        <button onclick="shoutTen();">Shout 10</button>
        <button onclick="countDown(10);">Count Down</button>
+       <button onclick="addNumbers()">Add the two numbers</button>
+       <button onclick="subtractNumbers()">Subtract the two numbers</button>
+       <button onclick="multiplyNumbers()">Multiply the two numbers</button>
+       <button onclick="divideNumbers()">Divide the two numbers</button>
     </body>
 
 </html>

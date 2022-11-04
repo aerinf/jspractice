@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style></style>
+    <script>
+        function initialize() {
+            randNumOutput = document.getElementById("rndnum");
+            generateRandomNumber();
+        }
+        function generateRandomNumber() {
+            rndNumber = Math.random();
+            rndNumber *= 10;
+            rndNumber = parseInt(rndNumber);
+            display();
+        }
+        function display() {
+            randNumOutput.innerHTML = rndNumber;
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
